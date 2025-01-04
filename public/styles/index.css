@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans";
+    margin: 20px;
+    background-color: #0c0c0d;
+    color: #e6e6e6;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    color: #737373;
+}
+
+.current {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #191919;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select, option {
+    font-family: "Open Sans";
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    background-color: black;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+img {
+    width: 2ch;
+    height: 2ch;
+}
+
+
+button {
+    font-family: "Open Sans";
+    font-weight: bold;
+    border: 1px solid #333;
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(235, 74%, 61%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, button:disabled, button[disabled] {
+    background-color: hsl(235, 74%, 56%);
+}
+
+.select-reload {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    border-radius: 8px 0 0 8px;
+}
+
+#reload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 8px 8px 0;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid #333;
+    border-left: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reload:hover {
+    background-color: #222;
+}
+
+#reload img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.emojis {
+    display: flex;
+    align-items: center;
+}
+
+#emojis {
+    height: 20px;
+    border-radius: 8px 0 0 8px;
+}
+
+#emojify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 8px 8px 0;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid #333;
+    border-left: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#emojify:hover {
+    background-color: #222;
+}
+
+#emojify img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+#author {
+    font-weight: bolder;
+}
+
+#messageContainer {
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: #0c0c0d;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: larger;
+}
+
+.message {
+    text-align: left;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="icons/forse.png">
+        <link rel="stylesheet" href="styles/index.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <title>spam react - channels</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a href="messages.html">message</a> <a href="channels.html" class="current">channels</a> <a href="users.html">users</a> <a href="guilds.html">guilds</a>
+            </nav>
+            <h1>spam react<br><span style="font-size: small; font-weight: normal; color: #737373;" id="as">logged in as </span></h1>
+            <div class="select-reload">
+                <select id="channel">
+                    <option id="s">select a saved channel...</option>
+                </select>
+                <a id="reload">
+                    <img src="icons/reload.svg" alt="reload">
+                </a>
+            </div>
+            <form id="form">
+                <label for="channelId">channel ID:</label>
+                <input type="text" placeholder="channel ID..." id="channelId" required>
+                <label for="channelName">channel name:</label>
+                <input type="text" placeholder="channel name..." id="channelName" required>
+                <label for="emojis" id="emojisLabel">emojis (20 detected):</label>
+                <div class="emojis">
+                    <input type="text" placeholder="separate each with a comma, can be custom emoji IDs or actual emojis" id="emojis" required>
+                    <a href="#" id="emojify">
+                        <img src="icons/emoji.svg" alt="emojify">
+                    </a>
+                </div>
+                <div style="display: inline-flex; width: 100%; gap: 10px;"><button type="submit" id="save" value="save">save</button> <button type="submit" id="delete" value="delete">delete</button></div>
+            </form>
+        </div>
+        <script type="text/javascript" src="scripts/emojify.js"></script>
+        <script type="text/javascript" src="scripts/channels.js"></script>
+    </body>
+</html>

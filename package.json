@@ -1,0 +1,18 @@
+{
+  "name": "discord-spam-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "discord.js-selfbot-v13": "^3.4.6",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
